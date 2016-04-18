@@ -52,3 +52,7 @@ module LiveScript
   end
 end
 
+ActiveSupport.on_load(:action_view) do
+  ActionView::Template.register_template_handler :ls, LiveScript::TiltTemplate
+  ActionView::Template.register_template_handler :livescript, LiveScript::TiltTemplate
+end

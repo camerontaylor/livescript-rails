@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.name        = "livescript-rails"
   s.version     = LiveScript::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Victor Hugo Borja"]
-  s.email       = ["vic.borja@gmail.com"]
-  s.homepage    = "https://github.com/Roonin-mx/livescript-rails"
+  s.authors     = ["Victor Hugo Borja, Cameron Taylor"]
+  s.email       = ["camerontaylor@gmail.com"]
+  s.homepage    = "https://github.com/camerontaylor/livescript-rails"
   s.summary     = %q{LiveScript adapter for the Rails asset pipeline.}
   s.description = %q{LiveScript adapter for the Rails asset pipeline.}
 
