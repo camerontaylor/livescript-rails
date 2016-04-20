@@ -10,10 +10,12 @@ module LiveScript
         config.annotations.register_extensions("livescript") { |annotation| /#\s*(#{annotation}):?\s*(.*)$/ }
       end
 
-      # initializer :register_livescript do |app|
-      #   app.assets.register_engine '.ls', TiltTemplate
-      #   app.assets.register_engine '.livescript', TiltTemplate
-      # end
+      initializer :register_livescript do |app|
+        app.config.assets.configure do |env|
+          env.register_engine '.ls', TiltTemplate
+          env.register_engine '.livescript', TiltTemplate
+        end
+      end
     end
   end
 end
